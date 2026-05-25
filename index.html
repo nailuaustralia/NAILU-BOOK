@@ -25,8 +25,9 @@ document.addEventListener('DOMContentLoaded',function(){
 'use strict';
 var SUPABASE_URL='https://kidqauasemiacoytrimb.supabase.co';
 var SUPABASE_KEY='sb_publishable_pCOzY05tLqimItCA5nMbNA_2zG2lhaS';
-var cloud=window.supabase&&window.supabase.createClient?window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY):null;
-var CLOUD_READY=!!cloud;
+var cloud = window.supabase.createClient('https://kidqauasemiacoytrimb.supabase.co',
+'sb_publishable_pCOzY05tLqimItCA5nMbNA_2zG2lhaS'
+);var CLOUD_READY=!!cloud;
 var STORAGE_KEY='nailu-final-collections-meta-v2';
 var OLD_KEY='nailu-final-collections';
 var DB_NAME='nailu-image-db-v1';
